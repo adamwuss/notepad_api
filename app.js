@@ -5,6 +5,8 @@ const apiRouter = require('./routes/api');
 
 const app = express();
 
+require('./db/mongoose')
+
 // routes
 app.use('/', apiRouter);
 
